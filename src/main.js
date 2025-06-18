@@ -13,11 +13,13 @@ const i18n = createI18n({
         "Поддерживать локализованные проекты так же легко, как и статические.",
       "title-two": "Расширение IDE управления I18n",
       "title-three": "Получить для вашей IDE",
+      "language": "Change language to English",
     },
     en: {
       "title-one": "Maintain localized projects as easy as static ones.",
       "title-two": "I18n management IDE extension",
       "title-three": "Get for your IDE",
+      "language": "Сменить язык на Русский",
     },
   },
 });
