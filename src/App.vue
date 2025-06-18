@@ -15,57 +15,14 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper">
-    <button class="button" @click="changeLanguage">{{ t('language') }}</button>
-    <h1 class="text title__one">
+  <div class="relative w-[100dvw] h-[100dvh] flex flex-col justify-center items-center text-center">
+    <button class="button absolute p-[20px_50px] rounded-[10px] top-[50px] right-[50px] border-0 text-[var(--color-background)] bg-[var(--color-accent-soft)] cursor-pointer" @click="changeLanguage">{{ t('language') }}</button>
+    <h1 class="text-[32px] font-black text-[var(--color-accent)]">
       {{ t('title-one') }}
     </h1>
-    <h2 class="text title__two">{{ t('title-two') }}</h2>
-    <h3 class="text title__three">{{ t('title-three') }}</h3>
+    <h2 class="text-[26px] font-medium text-[var(--color-heading)]">{{ t('title-two') }}</h2>
+    <h3 class="text-[22px] font-light text-[var(--color-text)]">{{ t('title-three') }}</h3>
   </div>
 </template>
 
-<style>
-body {
-  margin: 0;
-}
-
-.wrapper {
-  position: relative;
-  font-family: monospace, sans-serif;
-  width: 100dvw;
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title__one {
-  font-weight: 900;
-  color: rgb(35, 11, 132)
-}
-
-.title__two {
-  font-weight: 500;
-  color: rgb(15, 139, 139)
-}
-
-.title__three {
-  font-weight: 300;
-  color: rgb(185, 10, 25)
-}
-
-.button {
-  position: absolute;
-  padding: 20px 50px;
-  top: 50px;
-  right: 50px;
-  border-radius: 10px;
-  border: none;
-  background-color: darkgreen;
-  color: #fff;
-  cursor: pointer;
-}
-</style>
+<style scoped></style>
