@@ -3,10 +3,10 @@
 <template>
   <div class="wrapper">
     <h1 class="text title__one">
-      Maintain localized projects as easy as static ones.
+      {{ $t('title-one') }}
     </h1>
-    <h2 class="text title__two">I18n management IDE extension</h2>
-    <h3 class="text title__three">Get for your IDE</h3>
+    <h2 class="text title__two">{{ $t('title-two') }}</h2>
+    <h3 class="text title__three">{{ $t('title-three') }}</h3>
   </div>
 </template>
 
@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .title__one {
